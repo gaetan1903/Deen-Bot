@@ -1,4 +1,4 @@
-import requests, requests_toolbelt
+import os, requests, requests_toolbelt, json
 from unidecode import unidecode
 
 class Messenger:

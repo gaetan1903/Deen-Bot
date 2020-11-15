@@ -2,7 +2,7 @@ FROM ubuntu:latest
 
 ENV DEBIAN_FRONTEND noninteractive
 
-RUN apt update && apt install python3 python3-pip -y ; \
+RUN apt update && apt install python3 python3-pip curl -y ; \
 ln -sf /usr/bin/python3 /usr/bin/python ; \
 curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl ; \
 chmod a+rx /usr/local/bin/youtube-dl ; 
