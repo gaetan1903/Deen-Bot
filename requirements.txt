@@ -1,0 +1,6 @@
+requests
+requests_toolbelt
+flask
+gunicorn
+beautifulsoup4
+unidecode
