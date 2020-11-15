@@ -76,9 +76,9 @@ def traitement_text(msg, id):
     if val[0].upper() == 'MUSIQUE':
         print(bot.send_result_search(id).text)
     elif val[0] == 'LISTEN':
-        print(bot.send_file(id, "audio", val[1]).text)
+        print(bot.send_file(id, val[1], 'audio').text)
     elif val[0]== 'DOWNLOAD':
-        print(bot.send_file(id, "file", val[1]).text)
+        print(bot.send_file(id, val[1], 'file').text)
     elif val[0].lower() == 'test':
         bot.send_message_text(id, "test reussi")
     
