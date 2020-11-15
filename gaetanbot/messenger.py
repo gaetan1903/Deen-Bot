@@ -49,24 +49,119 @@ class Messenger:
                         "template_type":"generic",
                         "elements": [
                             {
-                                "title": "",
-                                "image_url": "",
+                                "title": "MA GENERATION",
+                                "image_url": "https://github.com/gaetan1903/assets/raw/main/mageneration.jpg",
 
-                                "subtitle": "",
+                                "subtitle": "Deen #1",
 
                                 "buttons":  [
                                     {
                                         "type":"postback",
                                         "title":"Ecouter",
-                                        "payload": "LISTEN "
+                                        "payload": "LISTEN https://github.com/gaetan1903/assets/raw/main/1.mp3"
                                     },
                                     {
                                         "type":"postback",
                                         "title":"Télécharger",
-                                        "payload": "MUSIQUE "
+                                        "payload": "DOWNLOAD https://github.com/gaetan1903/assets/raw/main/1.mp3"
                                     },
                                 ]
-                            }
+                            },
+                            {
+                                "title": "DADAFARAZONE",
+                                "image_url": "https://github.com/gaetan1903/assets/raw/main/mageneration.jpg",
+
+                                "subtitle": "Deen #2",
+
+                                "buttons":  [
+                                    {
+                                        "type":"postback",
+                                        "title":"Ecouter",
+                                        "payload": "LISTEN https://github.com/gaetan1903/assets/raw/main/2.mp3"
+                                    },
+                                    {
+                                        "type":"postback",
+                                        "title":"Télécharger",
+                                        "payload": "DOWNLOAD https://github.com/gaetan1903/assets/raw/main/2.mp3"
+                                    },
+                                ]
+                            },
+                            {
+                                "title": "VALY",
+                                "image_url": "https://github.com/gaetan1903/assets/raw/main/mageneration.jpg",
+
+                                "subtitle": "Deen #3",
+
+                                "buttons":  [
+                                    {
+                                        "type":"postback",
+                                        "title":"Ecouter",
+                                        "payload": "LISTEN https://github.com/gaetan1903/assets/raw/main/3.mp3"
+                                    },
+                                    {
+                                        "type":"postback",
+                                        "title":"Télécharger",
+                                        "payload": "DOWNLOAD https://github.com/gaetan1903/assets/raw/main/3.mp3"
+                                    },
+                                ]
+                            },
+                            {
+                                "title": "QUARTIER",
+                                "image_url": "https://github.com/gaetan1903/assets/raw/main/mageneration.jpg",
+
+                                "subtitle": "Deen #4",
+
+                                "buttons":  [
+                                    {
+                                        "type":"postback",
+                                        "title":"Ecouter",
+                                        "payload": "LISTEN https://github.com/gaetan1903/assets/raw/main/4.mp3"
+                                    },
+                                    {
+                                        "type":"postback",
+                                        "title":"Télécharger",
+                                        "payload": "DOWNLOAD https://github.com/gaetan1903/assets/raw/main/4.mp3"
+                                    },
+                                ]
+                            },
+                            {
+                                "title": "SOPHIE",
+                                "image_url": "https://github.com/gaetan1903/assets/raw/main/mageneration.jpg",
+
+                                "subtitle": "Deen #5",
+
+                                "buttons":  [
+                                    {
+                                        "type":"postback",
+                                        "title":"Ecouter",
+                                        "payload": "LISTEN https://github.com/gaetan1903/assets/raw/main/5.mp3"
+                                    },
+                                    {
+                                        "type":"postback",
+                                        "title":"Télécharger",
+                                        "payload": "DOWNLOAD https://github.com/gaetan1903/assets/raw/main/5.mp3"
+                                    },
+                                ]
+                            },
+                            {
+                                "title": "KOKY ACAPELLA",
+                                "image_url": "https://github.com/gaetan1903/assets/raw/main/mageneration.jpg",
+
+                                "subtitle": "Deen - BONUS #6",
+
+                                "buttons":  [
+                                    {
+                                        "type":"postback",
+                                        "title":"Ecouter",
+                                        "payload": "LISTEN https://github.com/gaetan1903/assets/raw/main/6.mp3"
+                                    },
+                                    {
+                                        "type":"postback",
+                                        "title":"Télécharger",
+                                        "payload": "DOWNLOAD https://github.com/gaetan1903/assets/raw/main/6.mp3"
+                                    },
+                                ]
+                            },
                         ], 
                     },
                 },

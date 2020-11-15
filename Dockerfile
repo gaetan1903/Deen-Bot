@@ -1,7 +1,5 @@
 FROM ubuntu:latest
 
-MAINTAINER Gaetan Jonathan 
-
 ENV DEBIAN_FRONTEND noninteractive
 
 RUN apt update && apt install python3 python3-pip -y ; \

@@ -39,7 +39,7 @@ class Execute(Thread):
                 if message.get('message'):
                     recipient_id = message['sender']['id']
                     #bot.persistent_menu(recipient_id, "DELETE")
-                    # bot.persistent_menu(recipient_id, "PUT")
+                    bot.persistent_menu(recipient_id, "PUT")
                     if message['message'].get('quick_reply'):
                         traitement_text(message['message'].get('quick_reply').get('payload'), recipient_id)
                     
@@ -66,14 +66,17 @@ def verify_fb_token(token_sent):
 def traitement_text(msg, id):
 
     val = msg.strip().split()
-
-    if val[0] == 'MUSIQUE':
-        pass
+    print(val)
+    if val[0].upper() == 'MUSIQUE':
+        print(bot.send_result_search(id).text)
     elif val[0] == 'LISTEN':
-        pass
+        print(bot.send_file_url(id, "audio", val[1]).text)
     elif val[0]== 'DOWNLOAD':
-        pass
+        print(bot.send_file_url(id, "file", val[1]).text)
+    elif val[0].lower() == 'test':
+        bot.send_message_text(id, "test reussi")
     
+
 
 if __name__ == "__main__":
     app.run()
