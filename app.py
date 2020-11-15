@@ -1,8 +1,14 @@
-import sys
-from gaetanbot import *
 from threading import Thread
-from fnmatch import fnmatch
-from youtubesearchpython import searchYoutube
+import os, re, sys, datetime, random
+from flask import Flask, request, jsonify
+import json, time
+import requests, requests_toolbelt
+from unidecode import unidecode
+from messenger import Messenger
+
+ID_ADMIN = "2967189363337819"
+ACCESS_TOKEN = "EAAMnENRUnygBAEJOSdZClbfUCZB0nBIvWjMpvb5LOfcvyhL12qd7tkr68k9ZCUsEBZCsTNAJykhjVmiehtZBrLWOtDrVFmtxcr9mGoGbCM7Wlsu6ztRZB1JP9muHN242H5NbB3hCmbAiRGkGK6pjd8Ef6dnHmrjzpkiT0rddKdv7XQVMrQa5FZBnnJa3fjiZAVIZD"
+VERIFY_TOKEN = 'jedeconne'
 
 
 app = Flask(__name__)
