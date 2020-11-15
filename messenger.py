@@ -1,4 +1,4 @@
-import os, requests, requests_toolbelt, json
+import os, json, requests, requests_toolbelt
 from unidecode import unidecode
 
 class Messenger:
@@ -51,7 +51,7 @@ class Messenger:
                         "elements": [
                             {
                                 "title": "MA GENERATION",
-                                "image_url": "https://github.com/gaetan1903/assets/raw/main/mageneration.jpg",
+                                "image_url": "https://github.com/gaetan1903/deen-album-generation/raw/main/pochette.jpg",
 
                                 "subtitle": "Deen #1",
 
@@ -59,18 +59,18 @@ class Messenger:
                                     {
                                         "type":"postback",
                                         "title":"Ecouter",
-                                        "payload": "LISTEN https://github.com/gaetan1903/deen-album-generation/raw/main/01%20-%20MA%20GENERATION.mp3"
+                                        "payload": "LISTEN MAGENERATION.mp3"
                                     },
                                     {
                                         "type":"postback",
                                         "title":"Télécharger",
-                                        "payload": "DOWNLOAD https://github.com/gaetan1903/deen-album-generation/raw/main/01%20-%20MA%20GENERATION.mp3"
+                                        "payload": "DOWNLOAD MAGENERATION.mp3"
                                     },
                                 ]
                             },
                             {
                                 "title": "DADAFARAZONE",
-                                "image_url": "https://github.com/gaetan1903/assets/raw/main/mageneration.jpg",
+                                "image_url": "https://github.com/gaetan1903/deen-album-generation/raw/main/pochette.jpg",
 
                                 "subtitle": "Deen #2",
 
@@ -78,18 +78,18 @@ class Messenger:
                                     {
                                         "type":"postback",
                                         "title":"Ecouter",
-                                        "payload": "LISTEN https://github.com/gaetan1903/deen-album-generation/raw/main/02%20-%20DADAFARAZONE.mp3"
+                                        "payload": "LISTEN DADAFARAZONE.mp3"
                                     },
                                     {
                                         "type":"postback",
                                         "title":"Télécharger",
-                                        "payload": "DOWNLOAD https://github.com/gaetan1903/deen-album-generation/raw/main/02%20-%20DADAFARAZONE.mp3"
+                                        "payload": "DOWNLOAD DADAFARAZONE.mp3"
                                     },
                                 ]
                             },
                             {
                                 "title": "VALY",
-                                "image_url": "https://github.com/gaetan1903/assets/raw/main/mageneration.jpg",
+                                "image_url": "https://github.com/gaetan1903/deen-album-generation/raw/main/pochette.jpg",
 
                                 "subtitle": "Deen #3",
 
@@ -97,18 +97,18 @@ class Messenger:
                                     {
                                         "type":"postback",
                                         "title":"Ecouter",
-                                        "payload": "LISTEN https://github.com/gaetan1903/deen-album-generation/blob/main/03%20-%20VALY.mp3?raw=true"
+                                        "payload": "LISTEN VALY.mp3"
                                     },
                                     {
                                         "type":"postback",
                                         "title":"Télécharger",
-                                        "payload": "DOWNLOAD https://github.com/gaetan1903/deen-album-generation/raw/main/03%20-%20VALY.mp3"
+                                        "payload": "DOWNLOAD VALY.mp3"
                                     },
                                 ]
                             },
                             {
                                 "title": "QUARTIER",
-                                "image_url": "https://github.com/gaetan1903/assets/raw/main/mageneration.jpg",
+                                "image_url": "https://github.com/gaetan1903/deen-album-generation/raw/main/pochette.jpg",
 
                                 "subtitle": "Deen #4",
 
@@ -116,18 +116,18 @@ class Messenger:
                                     {
                                         "type":"postback",
                                         "title":"Ecouter",
-                                        "payload": "LISTEN https://github.com/gaetan1903/deen-album-generation/raw/main/04%20-%20QUARTIER.mp3"
+                                        "payload": "LISTEN QUARTIER.mp3"
                                     },
                                     {
                                         "type":"postback",
                                         "title":"Télécharger",
-                                        "payload": "DOWNLOAD https://github.com/gaetan1903/deen-album-generation/raw/main/04%20-%20QUARTIER.mp3"
+                                        "payload": "DOWNLOAD QUARTIER.mp3"
                                     },
                                 ]
                             },
                             {
                                 "title": "SOPHIE",
-                                "image_url": "https://github.com/gaetan1903/assets/raw/main/mageneration.jpg",
+                                "image_url": "https://github.com/gaetan1903/deen-album-generation/raw/main/pochette.jpg",
 
                                 "subtitle": "Deen #5",
 
@@ -135,18 +135,18 @@ class Messenger:
                                     {
                                         "type":"postback",
                                         "title":"Ecouter",
-                                        "payload": "LISTEN https://github.com/gaetan1903/deen-album-generation/raw/main/05%20-%20SOPHIE.mp3"
+                                        "payload": "LISTEN SOPHIE.mp3"
                                     },
                                     {
                                         "type":"postback",
                                         "title":"Télécharger",
-                                        "payload": "DOWNLOAD https://github.com/gaetan1903/deen-album-generation/raw/main/05%20-%20SOPHIE.mp3"
+                                        "payload": "DOWNLOAD SOPHIE.mp3"
                                     },
                                 ]
                             },
                             {
                                 "title": "KOKY ACAPELLA",
-                                "image_url": "https://github.com/gaetan1903/assets/raw/main/mageneration.jpg",
+                                "image_url": "https://github.com/gaetan1903/deen-album-generation/raw/main/pochette.jpg",
 
                                 "subtitle": "Deen - BONUS #6",
 
@@ -154,12 +154,12 @@ class Messenger:
                                     {
                                         "type":"postback",
                                         "title":"Ecouter",
-                                        "payload": "LISTEN https://github.com/gaetan1903/deen-album-generation/raw/main/BONUS%20-%20KOKY%20ACAPELLA.mp3"
+                                        "payload": "LISTEN KOKYACAPELLA.mp3"
                                     },
                                     {
                                         "type":"postback",
                                         "title":"Télécharger",
-                                        "payload": "DOWNLOAD https://github.com/gaetan1903/deen-album-generation/raw/main/BONUS%20-%20KOKY%20ACAPELLA.mp3"
+                                        "payload": "DOWNLOAD KOKYACAPELLA.mp3"
                                     },
                                 ]
                             },
